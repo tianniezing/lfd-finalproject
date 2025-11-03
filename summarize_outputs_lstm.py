@@ -27,7 +27,7 @@ for file in glob.glob("output/slurm-*.out"):
             layers = int(job_match.group(8))
             bidir = job_match.group(9) == "True"
             f1 = float(f1_match.group(1))
-            macro_f1 = float(macro_f1_match.group(1)) # Capture the new value
+            macro_f1 = float(macro_f1_match.group(1))
             
             results.append({
                 "file": file,
@@ -41,13 +41,12 @@ for file in glob.glob("output/slurm-*.out"):
                 "layers": layers,
                 "bidirectional": bidir,
                 "f1_score_off": f1,
-                "f1_score_macro": macro_f1 # Add the new value to the dictionary
+                "f1_score_macro": macro_f1
             })
 
 df = pd.DataFrame(results)
 df = df.sort_values(by="f1_score_macro", ascending=False) 
 
-# Save to CSV
 df.to_csv("summary.csv", index=False)
 
 print("Successfully created summary.csv with the following data:")
