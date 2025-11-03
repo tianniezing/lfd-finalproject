@@ -1,6 +1,9 @@
 #!/usr/bin/env python
+
+# This file is a modified version of the code we used in the previous assignments.
+
 '''
-Finetunes a Transformer model for offensive language detection.
+Test different methods for handling hashtags in a BERT model for offensive language detection.
 '''
 import argparse
 import re

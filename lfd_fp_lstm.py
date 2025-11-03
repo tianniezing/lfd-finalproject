@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+# I used ChatGPT to help generate comments and docstrings for this file to make it more understandable.
+# Additionally, I used ChatGPT to help improve readability and troubleshoot errors.
+
 '''Create and train an LSTM network for offensive language detection'''
 import argparse
 import random as python_random
-
 import numpy as np
 import tensorflow as tf
 

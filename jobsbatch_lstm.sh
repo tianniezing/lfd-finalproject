@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# For this code, I used help from ChatGPT to set up the hyperparameter grid search with SLURM array jobs.
+# ChatGPT was mainly used troubleshoot bash syntax as I am not very experienced with bash scripting.
+
 #SBATCH --time=00:30:00
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1

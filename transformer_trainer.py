@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# This file is a modified version of the code we used in the previous assignments.
+
 '''
 Finetunes a Transformer model for offensive language detection.
 '''

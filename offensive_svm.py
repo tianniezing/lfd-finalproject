@@ -1,11 +1,14 @@
 #!/usr/bin/env python
+
+# I used ChatGPT to help generate comments and docstrings for this file to make it more understandable.
+# Additionally, I used ChatGPT to troubleshoot errors.
+
 '''
 Train and evaluate a Support Vector Machine (SVM) for offensive language detection.
 '''
 import argparse
 import pickle
 from typing import Callable
-
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report, f1_score, accuracy_score
 from sklearn.model_selection import GridSearchCV
